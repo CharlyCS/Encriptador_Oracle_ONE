@@ -2,11 +2,12 @@
 
 
 :root {
-    --color-primaria: #000000;
-    --color-secundaria: #F6F6F6;
-    --color-terciaria: #22D4FD;
-    --color-hover: #272727;
+    --color-primaria: #F3F5FC;
+    --color-secundaria: #0A3871;
+    --color-terciaria: #495057;
+    --color-hover: #343A40;
 
+    --fuente-init: 'Inter';
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
 }
@@ -32,14 +33,30 @@ body{
 }
 .header__menu__link{
     font-family: var(--fuente-montserrat);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    color: var(--color-terciaria);
+    color: var(--color-secundaria);
     text-decoration: none;
 
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
 
+.left-button{
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    background-color: #0A3871;
+}
+
+.right-button{
+    border: 1px solid #0A3871;
+    border-radius: 15px;
+    background-color: #D8DFE8;
+}
 
 .presentacion {
     padding: 5% 15%;
@@ -61,10 +78,6 @@ body{
     font-family: var(--fuente-krona);
 }
 
-.titulo-destaque {
-    color: var(--color-terciaria); ;
-}
-
 .presentacion__contenido__texto{
     font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
@@ -83,21 +96,7 @@ body{
     font-weight: 400;
     font-size: 1.5rem;
 }
-.presentacion__enlaces__link{
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      border: 2px solid var(--color-terciaria);
-      width: 50%;
-      text-align: center;
-      border-radius: 8px;
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 21.5px 0;
-      text-decoration: none;
-      color: var(--color-secundaria);
-      font-family: var(--fuente-montserrat);
-}
+
 
 .presentacion__enlaces__link:hover{
     background-color: var(--color-hover);
@@ -107,14 +106,30 @@ body{
     width: 50%;
 }
 
+.box {
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.box-first-text {
+    color: #343A40;
+}
+
+.box-second-text {
+    color: #495057;
+}
+
 .footer{
-    color:var(--color-primaria);
-    background-color: var(--color-terciaria);
+    color:white;
+    background-color: var(--color-secundaria);
     padding: 24px;
-    text-align: center;
+    text-align: left;
     font-family: var(--fuente-krona);
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 @media (max-width: 1200px) {
