@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador ONE Oracle</title>
     <link rel="stylesheet" href="styles/style.css">
-
 </head>
+
 <body>
     <header class="header">
-        <nav class="header__menu">
+        <nav class="header__menu" style="padding-bottom: 20px;">
             <a class="header__menu__link" href="https://github.com/CharlyCS/Encriptador_Oracle_ONE">Sobre el proyecto</a>
         </nav>
     </header>
 
-    <main class="presentacion">
-        <img class="presentacion__imagen" src="./assets/alura_logo.svg" alt="alura_logo">
-        <form type = "text" style="width: 500px; height: 100px; padding: 20px;" placeholder="Ingrese el texto aqui"></form>
-        <div class="grid-container">
-            <button class = "left-button">Encriptar</button>
-            <button class = "right-button">Desencriptar</button>
+    <div class="container">
+        <img src="./assets/alura_logo.svg" alt="alura_logo" style='position: absolute; left: 0; margin: 0; padding: 0;'>
+        <div class="content">
+            
+            <div class="input-section">
+                <textarea placeholder="Ingrese el texto aquí"></textarea>
+                <div class="buttons">
+                    <button onclick="inicio()" type="button">Encriptar</button>
+                    <button onclick="inicio()" type="button">Desencriptar</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./assets/kid.svg" alt="kid">
+                <h1 class="box-first-text">Ningun mensaje fue encontrado</h1>
+                <p class="box-second-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
         </div>
-        <div class="box">
-            <img src="./assets/kid.svg" alt="kid">
-            <h1 class="box-first-text">Ningun mensaje fue encontrado
-            </h1>
-            <p class="box-second-text">Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-    </main>
+    </div>
 
-    <footer class="footer">
+    <footer>
         <p>Developed by CharlyCS</p>
     </footer>
 
     <script src="app.js"></script>
 </body>
+
 </html>
