@@ -22,12 +22,13 @@
             
             <div class="input-section">
                 <textarea id="input" placeholder="Ingrese el texto aquí"></textarea>
+                <img src="./assets/caution.svg" alt="caution" style="position: absolute; left: 5rem;" >
                 <div class="buttons">
                     <button id ="encryption" onclick="encriptar()" type="button">Encriptar</button>
                     <button id = "decryption" onclick="desencriptar()" style="background-color: #D8DFE8; color: #0A3871; border-color: #0A3871; border-style: solid;" type="button">Desencriptar</button>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="output">
                 <img src="./assets/kid.svg" alt="kid">
                 <h1 class="box-first-text">Ningun mensaje fue encontrado</h1>
                 <p class="box-second-text">Ingresa el texto que desees encriptar o desencriptar.</p>
