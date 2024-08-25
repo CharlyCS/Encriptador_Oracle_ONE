@@ -9,9 +9,6 @@ This project is a web application for text encryption and decryption, developed 
 
 The application is designed to encrypt and decrypt text using a basic encryption technique (Caesar Cipher), specifically focusing on lowercase letters using ASCII values from 97 to 122. The encryption logic is implemented without any external libraries, relying solely on JavaScript, HTML, and CSS. The project's focus is on programming logic and creating an interactive user interface.
 
-
-### Initial Screen
-
 ![ASCII](./assets/ascii.webp)
 
 ## Features:
@@ -19,9 +16,10 @@ The application is designed to encrypt and decrypt text using a basic encryption
 - **Encrypt:** Converts the input text into a ciphered text based on character shifting.
 - **Decrypt:** Restores the original text from the ciphered text.
 
+### Initial Screen
 ![Initial Screen](./assets/initial_screen.PNG)
 
 ## Responsive Design
 The application is designed to be responsive, adapting to different screen sizes, from desktops to mobile devices. On smaller screens, elements like the footer and decorative images are hidden to optimize space.
 
-![Responsive](./assets/responsive.png)
+<img src="./assets/responsive.png" alt="Responsive" width="200px">
