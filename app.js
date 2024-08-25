@@ -1,4 +1,4 @@
-const clave = 3;
+const clave = 4;
 
 function encriptar(){
     const variable = document.getElementById('input').value;
@@ -13,7 +13,10 @@ function encriptar(){
             textoencriptado += texto[i];
         }
     }
-    document.getElementById("output").innerHTML = `<p>${textoencriptado}</p>`;
+    document.getElementById("encriptado").innerHTML = `<p>${textoencriptado}</p>`;
+    document.getElementById("copyButton").style.display = "inline-block";
+    document.getElementById("kid").style.display = "none";
+    document.getElementById("logan").style.display = "none";
 }
 
 function desencriptar() {
@@ -30,5 +33,14 @@ function desencriptar() {
         }
     }
 
-    document.getElementById("output").innerHTML = `<p>${textodesencriptado}</p>`;
+    document.getElementById("encriptado").innerHTML = `<p>${textodesencriptado}</p>`;
+    document.getElementById("kid").style.display = "none";
+    document.getElementById("logan").style.display = "none";
+}
+
+function copiar() {
+    const textoEncriptado = document.getElementById("encriptado").innerText;
+    navigator.clipboard.writeText(textoEncriptado).then(() => {
+        alert("Texto copiado al portapapeles");
+    });
 }

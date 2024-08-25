@@ -29,16 +29,22 @@
                 </div>
             </div>
             <div class="box" id="output">
-                <img src="./assets/kid.svg" alt="kid">
-                <h1 class="box-first-text">Ningun mensaje fue encontrado</h1>
-                <p class="box-second-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <img id="kid" src="./assets/kid.svg" alt="kid">
+                <h1 id="logan" class="box-first-text">Ningun mensaje fue encontrado</h1>
+                <p id="encriptado" class="box-second-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="copyButton" onclick="copiar()" style="display: none;">Copiar</button>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>Developed by CharlyCS</p>
+        <p>Developed by CharlyCS
+            <a href="https://github.com/CharlyCS" target="_blank">
+                <img src="./assets/github.svg" alt="github" style='margin: 0; padding: 0; width: 40px; height: 40px;'>
+            </a>
+        </p>
     </footer>
+    
 
     <script src="app.js"></script>
 </body>
