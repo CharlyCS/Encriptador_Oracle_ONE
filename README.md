@@ -19,7 +19,7 @@ The application is designed to encrypt and decrypt text using a basic encryption
 - **Encrypt:** Converts the input text into a ciphered text based on character shifting.
 - **Decrypt:** Restores the original text from the ciphered text.
 
-![Initial Screen](./assets/initial_screen.png)
+![Initial Screen](./assets/initial_screen.PNG)
 
 ## Responsive Design
 The application is designed to be responsive, adapting to different screen sizes, from desktops to mobile devices. On smaller screens, elements like the footer and decorative images are hidden to optimize space.
